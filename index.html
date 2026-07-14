@@ -174,13 +174,14 @@
   .repo-card:hover { transform: translateY(-4px); border-color: rgba(41,224,255,.5); box-shadow: 0 16px 40px rgba(0,0,0,.5), 0 0 30px rgba(41,224,255,.1); color: inherit; }
   .repo-card--pink:hover { border-color: rgba(255,61,129,.5); box-shadow: 0 16px 40px rgba(0,0,0,.5), 0 0 30px rgba(255,61,129,.1); }
   /* Stretched link: the repo title covers the whole card, so the card stays clickable
-     while the docs link below remains a separate, crawlable anchor. */
+     while the secondary link below remains a separate, crawlable anchor. The title points
+     at the project page on this domain where one exists; the repo is linked alongside it. */
   .repo-name { font-family: 'Chakra Petch', sans-serif; font-size: 18px; color: #eef2ff; }
   .repo-name::after { content: ''; position: absolute; inset: 0; z-index: 1; border-radius: 12px; }
   .repo-name:hover { color: #eef2ff; }
   .repo-card:hover .repo-name { color: var(--accent, #29e0ff); }
-  .repo-docs { position: relative; z-index: 2; display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: #7b86a3; border-bottom: 1px dashed rgba(255,255,255,.2); }
-  .repo-docs:hover { color: var(--accent, #29e0ff); border-bottom-color: var(--accent, #29e0ff); }
+  .repo-alt { position: relative; z-index: 2; display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: #7b86a3; border-bottom: 1px dashed rgba(255,255,255,.2); }
+  .repo-alt:hover { color: var(--accent, #29e0ff); border-bottom-color: var(--accent, #29e0ff); }
 
   .pill-link { font-size: 13px; padding: 9px 16px; border: 1px solid rgba(255,255,255,.13); border-radius: 8px; color: #d3ddf3; background: rgba(255,255,255,.02); transition: border-color .18s ease; }
   .pill-link:hover { border-color: var(--accent, #29e0ff); color: #d3ddf3; }
@@ -441,63 +442,63 @@
 
       <div class="repo-card">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-          <a class="repo-name" href="https://github.com/AngelMsger/bitbucket-cli" target="_blank" rel="noopener">bitbucket-cli</a>
+          <a class="repo-name" href="/bitbucket-cli/">bitbucket-cli</a>
           <span style="font-size: 10px; letter-spacing: 1px; padding: 3px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 20px; color: #6b7590;">PUBLIC</span>
         </div>
         <p style="margin: 0 0 18px; font-size: 13.5px; line-height: 1.7; color: #a9b4d0;">Agents &amp; humans browse repos, walk the full pull-request lifecycle, post inline review comments, and query branches &amp; commits.</p>
         <div style="display: flex; align-items: center; gap: 16px; font-size: 12px; color: #7b86a3;">
           <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 50%; background: #00ADD8;"></span>Go</span>
           <span>★ 5</span><span>⑂ 1</span>
-          <a class="repo-docs" href="/bitbucket-cli/" style="margin-left: auto;">docs ↗</a>
+          <a class="repo-alt" href="https://github.com/AngelMsger/bitbucket-cli" target="_blank" rel="noopener" style="margin-left: auto;">github ↗</a>
         </div>
       </div>
 
       <div class="repo-card">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-          <a class="repo-name" href="https://github.com/AngelMsger/confluence-cli" target="_blank" rel="noopener">confluence-cli</a>
+          <a class="repo-name" href="/confluence-cli/">confluence-cli</a>
           <span style="font-size: 10px; letter-spacing: 1px; padding: 3px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 20px; color: #6b7590;">PUBLIC</span>
         </div>
         <p style="margin: 0 0 18px; font-size: 13.5px; line-height: 1.7; color: #a9b4d0;">Lets coding agents use Confluence as an external knowledge base — read pages, search with CQL, browse spaces &amp; page trees.</p>
         <div style="display: flex; align-items: center; gap: 16px; font-size: 12px; color: #7b86a3;">
           <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 50%; background: #00ADD8;"></span>Go</span>
           <span>★ 4</span>
-          <a class="repo-docs" href="/confluence-cli/" style="margin-left: auto;">docs ↗</a>
+          <a class="repo-alt" href="https://github.com/AngelMsger/confluence-cli" target="_blank" rel="noopener" style="margin-left: auto;">github ↗</a>
         </div>
       </div>
 
       <div class="repo-card">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-          <a class="repo-name" href="https://github.com/AngelMsger/jenkins-cli" target="_blank" rel="noopener">jenkins-cli</a>
+          <a class="repo-name" href="/jenkins-cli/">jenkins-cli</a>
           <span style="font-size: 10px; letter-spacing: 1px; padding: 3px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 20px; color: #6b7590;">PUBLIC</span>
         </div>
         <p style="margin: 0 0 18px; font-size: 13.5px; line-height: 1.7; color: #a9b4d0;">Debug CI from the terminal — discover jobs, read build status &amp; history, and find out why a build failed: which stage broke, which tests, which commits.</p>
         <div style="display: flex; align-items: center; gap: 16px; font-size: 12px; color: #7b86a3;">
           <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 50%; background: #00ADD8;"></span>Go</span>
-          <a class="repo-docs" href="/jenkins-cli/" style="margin-left: auto;">docs ↗</a>
+          <a class="repo-alt" href="https://github.com/AngelMsger/jenkins-cli" target="_blank" rel="noopener" style="margin-left: auto;">github ↗</a>
         </div>
       </div>
 
       <div class="repo-card">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-          <a class="repo-name" href="https://github.com/AngelMsger/openobserve-cli" target="_blank" rel="noopener">openobserve-cli</a>
+          <a class="repo-name" href="/openobserve-cli/">openobserve-cli</a>
           <span style="font-size: 10px; letter-spacing: 1px; padding: 3px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 20px; color: #6b7590;">PUBLIC</span>
         </div>
         <p style="margin: 0 0 18px; font-size: 13.5px; line-height: 1.7; color: #a9b4d0;">Explore an OpenObserve backend from the command line — discover streams, inspect schema, run SQL searches over logs, metrics &amp; traces.</p>
         <div style="display: flex; align-items: center; gap: 16px; font-size: 12px; color: #7b86a3;">
           <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 50%; background: #00ADD8;"></span>Go</span>
-          <a class="repo-docs" href="/openobserve-cli/" style="margin-left: auto;">docs ↗</a>
+          <a class="repo-alt" href="https://github.com/AngelMsger/openobserve-cli" target="_blank" rel="noopener" style="margin-left: auto;">github ↗</a>
         </div>
       </div>
 
       <div class="repo-card repo-card--pink">
         <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px;">
-          <a class="repo-name" href="https://github.com/AngelMsger/o3" target="_blank" rel="noopener">o3</a>
+          <a class="repo-name" href="/o3/">o3</a>
           <span style="font-size: 10px; letter-spacing: 1px; padding: 3px 8px; border: 1px solid rgba(255,255,255,.15); border-radius: 20px; color: #6b7590;">PUBLIC</span>
         </div>
         <p style="margin: 0 0 18px; font-size: 13.5px; line-height: 1.7; color: #a9b4d0;">OpenObserve, as a native app. Query logs, explore metrics &amp; manage connections from a purpose-built macOS client — no browser tab, no context switching.</p>
         <div style="display: flex; align-items: center; gap: 16px; font-size: 12px; color: #7b86a3;">
           <span style="display: inline-flex; align-items: center; gap: 6px;"><span style="width: 11px; height: 11px; border-radius: 50%; background: #ff3d81;"></span>macOS app</span>
-          <a class="repo-docs" href="/o3/" style="margin-left: auto;">docs ↗</a>
+          <a class="repo-alt" href="https://github.com/AngelMsger/o3" target="_blank" rel="noopener" style="margin-left: auto;">github ↗</a>
         </div>
       </div>
 
